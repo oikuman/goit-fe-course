@@ -72,7 +72,7 @@ input[type="radio"].visually-hidden{
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    width: 600px;
+    width: 630px;
     padding: 0;
     counter-reset: my-counter;
 }
