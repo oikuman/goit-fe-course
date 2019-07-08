@@ -37,32 +37,25 @@ body {
     background-size: cover;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: rgb(98, 98, 98);
-    text-decoration: none;
-}
-
-a:focus, a:hover {
-    color: rgb(65, 190, 246);
-}
-
-img {
-    display: block;
-    width: auto;
-    height: 256px;
-    margin: 0 auto;
-}
-
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
 }
 
 .container {
@@ -76,6 +69,8 @@ img {
 
 
 .site-navigation {
+    list-style: none;
+    padding: 0;
     margin: 0 auto;
     width: 600px;
     padding: 0;
@@ -90,8 +85,17 @@ img {
     text-transform: uppercase;
 }
 
+.site-navigation li a {
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+}
+
+.site-navigation li a:focus, .site-navigation li a:hover {
+    color: rgb(65, 190, 246);
+}
+
 .menu-list-item:not(:last-child) {
-    margin-right: 80px;
+    margin-right: 90px;
 }
 
 .menu-list-item::before {
@@ -126,10 +130,17 @@ img {
 } 
 
 .article-image {
+    display: block;
+    margin: 0;
+    min-width: 384px;
+    max-width: 384px;
+    min-height: 256px;
+    max-height: 256px;
     margin-bottom: 32px;
 }
 
 .article-box:hover .article-image {
+    
     -webkit-filter: sepia(40%);
     filter: sepia(40%);
 }
