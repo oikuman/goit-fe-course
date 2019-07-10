@@ -56,7 +56,7 @@ input[type="radio"].visually-hidden{
     padding: 68px 0 100px;
 }
 
-/* jystifying with text-align  */
+/* jystifying with text-align */
 .site-navigation {
     list-style: none;
     padding: 0;
@@ -68,6 +68,7 @@ input[type="radio"].visually-hidden{
 }
 
 .site-navigation li a {
+    display: block;
     color: rgb(98, 98, 98);
     text-decoration: none;
 }
@@ -97,14 +98,14 @@ input[type="radio"].visually-hidden{
 
 .article-list {
     font-size: 0;
-    margin: 0;
+    margin: 0 0 46px;
     padding: 0;
     font-size: 0;
 }
 
 .article-item {
     display: inline-block;
-    margin: 0;
+    margin: 0 0 36px;
     padding: 0;
     width: 420px;
     font-size: 0;
@@ -116,7 +117,7 @@ input[type="radio"].visually-hidden{
 }
 
 .article-item:nth-last-child(-n+2) {
-    margin-bottom: 46px;
+    margin-bottom: 0;
 } 
 
 .article-image {
@@ -146,7 +147,7 @@ input[type="radio"].visually-hidden{
 }
 
 .article-text {
-    margin: 0 0 36px;
+    margin: 0;
     padding: 0;
     font-size: 14px;
     line-height: 24px;
