@@ -1,189 +1,291 @@
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/playfair-display.eot'); /* IE9 Compat Modes */
-    src: url('fonts/playfair-display.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/playfair-display.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/playfair-display.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/playfair-display.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/playfair-display.svg#playfair-display') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('fonts/ubuntu.eot'); /* IE9 Compat Modes */
-    src: url('fonts/ubuntu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/ubuntu.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/ubuntu.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/ubuntu.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/ubuntu.svg#ubuntu') format('svg'); /* Legacy iOS */
-         font-weight: 300;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap");
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    background-image: linear-gradient(to right, rgba(234, 234, 234, 0.9), rgba(219, 219, 219, 0.9), rgba(242, 242, 242, 0.9), rgba(173, 169, 150, 0.9)),
-    url('../img/background/sky.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border:0;
-    padding: 0;
-    white-space:nowrap;
-    clip-path:inset(100%);
-    clip: rect(0 0 0 0);
-    overflow:hidden;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .container {
-    width: 900px;
-    margin: 0 auto;
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .page-nav {
-    padding: 68px 0;
+  padding: 36px 0;
+  margin-bottom: 70px;
 }
 
+.page-logo {
+  display: inline-block;
+}
 
 .site-navigation {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 630px;
-    padding: 0;
-    counter-reset: my-counter;
+  float: right;
+  list-style: none;
+  margin: 3px 0 0;
+  padding: 0;
 }
 
-.site-navigation li {
-    float: left;
-    list-style: none;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-.site-navigation li a {
-    color: rgb(98, 98, 98);
-    text-decoration: none;
-}
-
-.site-navigation li a:focus, .site-navigation li a:hover {
-    color: rgb(65, 190, 246);
+.menu-list-item {
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .menu-list-item:not(:last-child) {
-    margin-right: 90px;
+  margin-right: 25px;
 }
 
-.menu-list-item::before {
-    counter-increment: my-counter;
-    content: counter(my-counter) ". ";
+.menu-list-item a {
+  display: block;
+  color: rgb(98, 98, 98);
+  text-decoration: none;
 }
 
-.article-box {
-    float: left;
-    margin: 0 0 40px;
-    border: 1px solid;
-    padding: 15px;
-    width: 418px;
-    box-shadow: 10px 10px;
+.menu-list-item a:focus,
+.menu-list-item a:hover {
+  color: rgb(78, 198, 171);
 }
 
-/* setting rules for odd, even, first two and last two elements*/
-.article-box:nth-child(odd) {
-    margin-right: 28px;
+.products-section {
+  margin: 0;
+  padding: 0;
 }
 
-.article-box:nth-child(even) {
-    margin-left: 28px;
+.product-section-title {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(81, 81, 81);
+  margin: 0 0 30px;
+  padding: 0;
 }
 
-.article-box:nth-child(-n+2) {
-    margin-top: 32px;
+.product-section-line {
+  width: 160px;
+  height: 8px;
+  background-color: rgb(78, 198, 171);
+  border: none;
+  margin: 0 auto 90px;
+  padding: 0;
 }
 
-.article-box:nth-last-child(-n+2) {
-    margin-bottom: 46px;
-} 
+.product-list {
+  margin: 0 0 104px;
+  padding: 0;
+}
 
-.article-image {
-    display: block;
+.product-list-item {
+  float: left;
+  list-style: none;
+  width: 256px;
+  height: 322px;
+}
+
+.product-list-item:not(:nth-child(4n)) {
+  margin-right: 28px;
+}
+
+.product-list-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
+.image-box {
+  float: left;
+  width: 256px;
+  height: 286px;
+}
+
+.product-tools-woman-shoes {
+    background: url("../img/products/woman-shoes.png") no-repeat center center,
+    rgb(233, 240, 253);    
+}
+
+.product-tools-belt {
+    background: url("../img/products/belt.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-tools-hat {
+    background: url("../img/products/hat.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-tools-beg {
+    background: url("../img/products/beg.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-tools-black-beg {
+    background: url("../img/products/black-beg.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-tools-black-belt {
+    background: url("../img/products/black-belt.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-tools-shoes {
+    background: url("../img/products/shoes.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-tools-glasses {
+    background: url("../img/products/glasses.png") no-repeat center center,
+    rgb(233, 240, 253);
+}
+
+.product-image {
+  background-color: rgb(233, 240, 253);
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.product-details {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 300;
+  height: 50;
+}
+
+.product-name {
+  float: left;
+  list-style: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  width: 202px;
+  height: 40px;
+  padding: 10px 12px;
+}
+
+.product-price {
+  float: left;
+  list-style: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  background-color: rgb(140, 140, 140);
+  width: 54px;
+  height: 40px;
+  padding: 10px 12px;
+}
+
+.product-details:hover .product-name {
+  background-color: rgb(78, 198, 171);
+}
+
+.product-details:hover .product-price {
+  background-color: rgb(127, 217, 199);
+}
+
+.news-section {
     margin: 0;
-    min-width: 384px;
-    max-width: 384px;
-    min-height: 256px;
-    max-height: 256px;
-    margin-bottom: 32px;
+    padding: 0 0 46px;
 }
 
-.article-box:hover .article-image {
-    
-    -webkit-filter: sepia(40%);
-    filter: sepia(40%);
+.news-section-title {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(81, 81, 81);
+  text-transform: uppercase;
+  margin: 0 0 30px;
+  padding: 0;
 }
 
-.article-tag {
-    font-family: "Ubuntu";
-    font-size: 14px;
-    font-weight: 300;
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    margin: 0 0 26px;
-    padding: 0;
+.news-section-line {
+  width: 160px;
+  height: 8px;
+  background-color: rgb(78, 198, 171);
+  border: none;
+  margin: 0 auto 80px;
+  padding: 0;
 }
 
-.article {
-    margin: 0;
-    padding: 0;
+.news-list {
+  margin: 0 0 18px;
+  padding: 0;
 }
 
-.article-title {
-    margin: 0 0 32px;
-    padding: 0;
-    font-size: 28px;
-    font-weight: normal;
+.news-list-item {
+  width: 350px;
+  height: 500px;
+  float: left;
+  list-style: none;
 }
 
-.article-text {
-    margin: 0 0 36px;
-    font-size: 14px;
-    line-height: 24px;
+.news-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.btn {
-    margin: 0 auto 20px;
-    border: 1px solid rgb( 98, 98, 98 );
-    padding: 18px 32px;
-    background-color: #ffffff;
-    color: rgb( 98, 98, 98 );
-    background: rgb(211, 209, 209);
-    line-height: 24px;
-    display: block;
-    cursor: pointer;
+.news-image {
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 260px;
+  max-height: 260px;
+  margin: 0 0 20px;
 }
 
+.news-description {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 4px;
+  padding: 0;
+}
 
-  
+.news-hr {
+  width: 136px;
+  height: 3px;
+  background-color: rgb(78, 198, 171);
+  border: none;
+  margin: 0 0 30px;
+}
+
+.news-text {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 6px;
+  padding: 0;
+}
+
+.read-more-btn {
+  font-family: "Open Sans";
+  font-size: 16;
+  font-weight: 300;
+  line-height: 26px;
+  background-color: rgb(78, 198, 171);
+  padding: 18px 42px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
