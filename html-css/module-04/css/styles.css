@@ -74,17 +74,20 @@ html {
   text-align: center;
   text-transform: uppercase;
   color: rgb(81, 81, 81);
-  margin: 0 0 30px;
+  margin: 0;
   padding: 0;
 }
 
-.product-section-line {
+.product-section-title::after {
+  content: "";
   width: 160px;
   height: 8px;
   background-color: rgb(78, 198, 171);
   border: none;
-  margin: 0 auto 90px;
+  margin: 30px auto 90px;
   padding: 0;
+  display: block;
+  clear: both;
 }
 
 .product-list {
@@ -99,6 +102,11 @@ html {
   height: 322px;
 }
 
+.product-list-item:hover .image-box {
+  -webkit-filter: sepia(80%);
+  filter: sepia(80%);
+}
+
 .product-list-item:not(:nth-child(4n)) {
   margin-right: 28px;
 }
@@ -111,53 +119,44 @@ html {
   float: left;
   width: 256px;
   height: 286px;
+  background-color: rgb(233, 240, 253);
 }
 
 .product-tools-woman-shoes {
-    background: url("../img/products/woman-shoes.png") no-repeat center center,
-    rgb(233, 240, 253);    
+  padding: 0;
 }
 
 .product-tools-belt {
-    background: url("../img/products/belt.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 18px;
 }
 
 .product-tools-hat {
-    background: url("../img/products/hat.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 62px;
 }
 
 .product-tools-beg {
-    background: url("../img/products/beg.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 39px;
 }
 
 .product-tools-black-beg {
-    background: url("../img/products/black-beg.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 24px;
 }
 
 .product-tools-black-belt {
-    background: url("../img/products/black-belt.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 51px;
 }
 
 .product-tools-shoes {
-    background: url("../img/products/shoes.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 21px;
 }
 
 .product-tools-glasses {
-    background: url("../img/products/glasses.png") no-repeat center center,
-    rgb(233, 240, 253);
+  padding-top: 92px;
 }
 
 .product-image {
-  background-color: rgb(233, 240, 253);
   display: block;
   margin: 0 auto;
-  vertical-align: middle;
 }
 
 .product-details {
@@ -179,6 +178,7 @@ html {
   background-color: rgb(50, 50, 50);
   width: 202px;
   height: 40px;
+  margin: 0;
   padding: 10px 12px;
 }
 
@@ -192,6 +192,7 @@ html {
   background-color: rgb(140, 140, 140);
   width: 54px;
   height: 40px;
+  margin: 0;
   padding: 10px 12px;
 }
 
@@ -204,8 +205,8 @@ html {
 }
 
 .news-section {
-    margin: 0;
-    padding: 0 0 46px;
+  margin: 0;
+  padding: 0 0 46px;
 }
 
 .news-section-title {
@@ -215,27 +216,29 @@ html {
   text-align: center;
   color: rgb(81, 81, 81);
   text-transform: uppercase;
-  margin: 0 0 30px;
+  margin: 0;
   padding: 0;
 }
 
-.news-section-line {
+.news-section-title::after {
+  content: "";
   width: 160px;
   height: 8px;
   background-color: rgb(78, 198, 171);
   border: none;
-  margin: 0 auto 80px;
+  margin: 30px auto 80px;
   padding: 0;
+  display: block;
+  clear: both;
 }
 
 .news-list {
-  margin: 0 0 18px;
+  margin: 0;
   padding: 0;
 }
 
 .news-list-item {
   width: 350px;
-  height: 500px;
   float: left;
   list-style: none;
 }
@@ -257,16 +260,19 @@ html {
   font-size: 14px;
   font-weight: 600;
   line-height: 26px;
-  margin: 0 0 4px;
+  margin: 0;
   padding: 0;
 }
 
-.news-hr {
+.news-description::after {
+  content: '';
   width: 136px;
   height: 3px;
   background-color: rgb(78, 198, 171);
   border: none;
-  margin: 0 0 30px;
+  margin: 4px 0 30px;
+  display: block;
+  clear: both;
 }
 
 .news-text {
@@ -278,14 +284,27 @@ html {
   padding: 0;
 }
 
-.read-more-btn {
+.read-more-link {
+  display: block;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.read-more-element {
+  background-color: rgb(78, 198, 171);
+  width: 160px;
+  border-radius: 3px;
+}
+
+.read-more-text {
   font-family: "Open Sans";
   font-size: 16;
   font-weight: 300;
   line-height: 26px;
-  background-color: rgb(78, 198, 171);
-  padding: 18px 42px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+  color: white;
+  margin: 0;
+  padding: 18px 40px;
 }
