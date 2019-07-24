@@ -11,6 +11,12 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -18,14 +24,13 @@ html {
 }
 
 .container {
-    width: 1600px;
+    width: 1110px;
     margin: 0 auto;
 }
 
 .page-nav {
     padding: 36px 0;
     margin: 0 auto;
-    width: 1110px;
 }
 
 .page-logo {
@@ -63,25 +68,22 @@ html {
     color: rgb(26, 188, 156);
 }
 
-.slider {
-    position: relative;
-    width: 1600px;
-    height: 604px;
+.slider-section {
+    background-image: url('../img/slider_images/slider_img1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1600px 604px;
 }
 
-.slider-image {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+.slider {
+    position: relative;
+    width: 1110px;
     height: 604px;
-    object-fit: cover;
 }
 
 .slide-text {
     margin: 0;
     padding: 0;
-    display: inline-block;
     position: absolute;
     top: 200px;
     left: 50%;
@@ -96,10 +98,12 @@ html {
     font-weight: 900;
     font-size: 60px;
     line-height: 82px;
+    letter-spacing: 0;
     color: white;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    width: 780px;
 }
 
 .slide-description {
@@ -120,14 +124,17 @@ html {
     position: absolute;
     top: 226px;
     cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .slider-ctrl-prev {
-    left: 244px;
+    left: 0;
 }
 
 .slider-ctrl-next {
-    right: 244px;
+    right: 0;
 }
 
 .ctrl-arrow {
@@ -141,9 +148,10 @@ html {
 }
 
 .collection-section {
-    margin: 0;
+    margin: 0 auto;
     padding: 100px 0;
     background-color: rgb(233, 240, 253);
+    width: 1600px;
     font-size: 0;
 }
 
@@ -181,7 +189,7 @@ html {
     float: left;
     list-style: none;
     width: 256px;
-    height: 328px;
+    height: 320.px;
     position: relative;
 }
 
@@ -196,18 +204,19 @@ html {
 .image-box {
     float: left;
     width: 256px;
-    height: 328x;
+    height: 320px;
     position: relative;
 }
 
 .product-image {
-    display: block;
-    margin: 0 auto;
+    width: 256px;
+    height: 320px;
+    object-fit: cover;
 }
 
 .image-visible-part {
     width: 256px;
-    height: 288px;
+    height: 280px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -319,7 +328,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     text-transform: uppercase;
     position: absolute;
@@ -377,6 +386,8 @@ html {
     background-color: rgb(50, 50, 50);
     padding: 34px 0 0;
     text-align: center;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .footer-text {

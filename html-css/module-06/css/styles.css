@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 
+rgb(50,50,50);
+rgb(243,129,129);
+rgb(149,225,211);
+rgb(249,198,198);
+*/
+
+.services-section {
+  
+}
+
+
+.services-section-title {
+  
+}
+
+.features-list {
+
+}
+
+
+.features-list-item {
+
+}
+
+
+
+
+
+
+.team-section {
+
+}
+
+.team-section-title {
+
+}
+
+
+.team-description {
+
+}
+
+.team-members {
+
+}
+
+
+.team-members-person {
+
+}
+
+.team-members-person:active {
+  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+}
+
+
+
+
+.team-member-photo {
+
+}
+
+
+
+.team-member-name {
+
+}
+
+
+.team-member-position {
+
+}
+
+
+
+
+
+
+.page-footer {
+
+}
+
+
