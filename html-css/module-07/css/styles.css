@@ -79,8 +79,7 @@ html {
 
 .page-nav {
     margin: 0;
-    padding: 0;
-    height: 142px;
+    padding:  50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +185,6 @@ html {
     justify-content: center;
     align-items: center;
     width: 292px;
-    height: 232px;
 }
 
 .icon-box {
@@ -234,8 +232,6 @@ html {
 }
 
 .contact-form-field {
-    width: 1400px;
-    height: 678px;
     margin: 0 auto;
     padding: 104px 0 114px;
     background-size: 1400px 678px;
