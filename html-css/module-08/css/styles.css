@@ -297,6 +297,9 @@ html {
 
     .page-header {
         background: url("../img/banner/banner1_m.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-top: 50px;
     }
 
@@ -353,6 +356,9 @@ html {
 
     .page-header {
         background: url("../img/banner/banner1_b.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .header-content {
