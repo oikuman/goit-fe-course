@@ -1,0 +1,373 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: "Montserrat Reg";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat Regular"), local("Montserrat-Regular"),
+        url("./fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+    font-family: "Montserrat Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+        url("./fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+    font-family: "Roboto Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url("./fonts/roboto-v20-latin-300.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto Reg";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("./fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --red-color: rgb(255, 78, 80);
+    --yellow-color: rgb(255, 165, 7);
+    --green-color: rgb(28, 215, 173);
+    --blue-color: rgb(78, 115, 219);
+    --black-color: rgb(51, 51, 51);
+    --grey-color: rgb(102, 102, 102);
+}
+
+html {
+    box-sizing: border-box;
+    size-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.page-header {
+    min-width: 320px;
+    background: url("../img/banner/banner1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 20px 0 138px;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 320px;
+    margin-bottom: 36px;
+}
+
+.logo-link {
+    display: flexbox;
+    order: 2;
+}
+
+.sign-field {
+    display: flexbox;
+    order: 1;
+}
+
+.login {
+    width: 90px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: rgba(26, 25, 21, 0);
+    border: 2px solid transparent;
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.login:hover,
+.login:focus {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.signup {
+    width: 90px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: rgba(26, 25, 21, 0);
+    border: 2px solid transparent;
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.signup:hover,
+.signup:focus {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.starting-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.starting-title {
+    font-family: "Montserrat Bold";
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.starting-description {
+    font-family: "Roboto Light";
+    font-size: 18px;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.starting-button {
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+    color: white;
+    min-width: 280px;
+    padding: 12px 0;
+    border-radius: 20px;
+    background-color: var(--red-color);
+    border: none;
+    cursor: pointer;
+}
+
+.partners-section {
+    padding: 70px 0 56px;
+}
+
+.partners-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+}
+
+.partners-section-title {
+    font-family: "Montserrat Bold";
+    font-size: 22px;
+    color: var(--black-color);
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+}
+
+.partner-list {
+    list-style: none;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.partner-list-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 320px;
+}
+
+.photo-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #fbfbfb;
+    margin-bottom: 18px;
+}
+
+.partner-foto {
+    border-radius: 50%;
+}
+
+.photo-box-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid white;
+    width: 32px;
+    height: 32px;
+    background-color: var(--red-color);
+}
+
+.partner-list-person:nth-child(1) .photo-box-icon {
+    background-image: url("../img/icons/tv.png");
+    background-color: var(--red-color);
+}
+
+.partner-list-person:nth-child(2) .photo-box-icon {
+    background-image: url("../img/icons/bulb.png");
+    background-color: var(--yellow-color);
+}
+
+.partner-list-person:nth-child(3) .photo-box-icon {
+    background-image: url("../img/icons/cup.png");
+    background-color: var(--green-color);
+}
+
+.partner-list-person:nth-child(4) .photo-box-icon {
+    background-image: url("../img/icons/plane.png");
+    background-color: var(--blue-color);
+}
+
+.partner-name {
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+    color: var(--black-color);
+    margin-bottom: 16px;
+}
+
+.partner-info {
+    max-width: 220px;
+    font-family: "Roboto Light";
+    font-size: 14px;
+    color: var(--grey-color);
+    text-align: center;
+}
+
+.see-others-btn {
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+    color: var(--red-color);
+    min-width: 280px;
+    padding: 12px 0;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid var(--red-color);
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .header-content {
+        min-height: 210px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 748px;
+        margin: 0 auto;
+    }
+
+    .header-content {
+        min-width: 748px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .page-header {
+        background: url("../img/banner/banner1_m.png");
+        padding-top: 50px;
+    }
+
+    .logo-link {
+        order: 1;
+    }
+
+    .sign-field {
+        order: 2;
+    }
+
+    .starting-title {
+        font-size: 52px;
+        max-width: 600px;
+        margin-bottom: 32px;
+    }
+
+    .starting-description {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    .partner-list {
+    }
+
+    .partner-list-person {
+        flex-basis: 236px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1339px) {
+    .partner-list {
+        max-width: 492px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .partner-list-person {
+        margin-bottom: 26px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        background: url("../img/banner/banner1_b.png");
+    }
+
+    .header-content {
+        min-width: 940px;
+    }
+
+    .partner-list {
+        padding: 28px 0 34px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .partner-list-person {
+        flex-basis: 220px;
+    }
+}

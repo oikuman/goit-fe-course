@@ -1,0 +1,13 @@
+
+    
+
+font-family: 'Montserrat Reg';
+   
+font-family: 'Montserrat Bold';
+
+font-family: 'Roboto Light';
+
+font-family: 'Roboto Reg';
+
+
+min-width: 320px;
