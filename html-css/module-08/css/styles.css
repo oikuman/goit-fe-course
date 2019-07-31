@@ -109,6 +109,7 @@ html {
     font-family: "Montserrat Bold";
     font-size: 14px;
     color: white;
+    outline:none;
     cursor: pointer;
 }
 
@@ -126,6 +127,7 @@ html {
     font-family: "Montserrat Bold";
     font-size: 14px;
     color: white;
+    outline:none;
     cursor: pointer;
 }
 
@@ -159,24 +161,26 @@ html {
 .starting-button {
     font-family: "Montserrat Bold";
     font-size: 14px;
-    color: white;
+    color: var(--red-color);
     min-width: 280px;
     padding: 12px 0;
     border-radius: 20px;
+    color: white;
     background-color: var(--red-color);
-    border: none;
+    border: 2px solid rgb(255,77,79);
+    display: block;
+    margin: 0 auto;
+    outline:none;
     cursor: pointer;
+}
+
+.starting-button:hover {
+    background-color: white;
+    color: var(--red-color);
 }
 
 .partners-section {
     padding: 70px 0 56px;
-}
-
-.partners-section-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 320px;
 }
 
 .partners-section-title {
@@ -213,39 +217,39 @@ html {
     margin-bottom: 18px;
 }
 
-.partner-foto {
-    border-radius: 50%;
-}
-
-.photo-box-icon {
+.photo-box::after {
+    content: '';
     position: absolute;
     right: 0;
     bottom: 0;
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     border: 4px solid white;
     width: 32px;
     height: 32px;
-    background-color: var(--red-color);
 }
 
-.partner-list-person:nth-child(1) .photo-box-icon {
+.partner-foto {
+    border-radius: 50%;
+}
+
+.partner-list-person:nth-child(1) .photo-box::after {
     background-image: url("../img/icons/tv.png");
     background-color: var(--red-color);
 }
 
-.partner-list-person:nth-child(2) .photo-box-icon {
+.partner-list-person:nth-child(2) .photo-box::after {
     background-image: url("../img/icons/bulb.png");
     background-color: var(--yellow-color);
 }
 
-.partner-list-person:nth-child(3) .photo-box-icon {
+.partner-list-person:nth-child(3) .photo-box::after {
     background-image: url("../img/icons/cup.png");
     background-color: var(--green-color);
 }
 
-.partner-list-person:nth-child(4) .photo-box-icon {
+.partner-list-person:nth-child(4) .photo-box::after {
     background-image: url("../img/icons/plane.png");
     background-color: var(--blue-color);
 }
@@ -272,9 +276,18 @@ html {
     min-width: 280px;
     padding: 12px 0;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid var(--red-color);
+    color: white;
+    background-color: var(--red-color);
+    border: 2px solid rgb(255,77,79);
+    display: block;
+    margin: 0 auto;
+    outline:none;
     cursor: pointer;
+}
+
+.see-others-btn:hover {
+    background-color: white;
+    color: var(--red-color);
 }
 
 @media (max-width: 767px) {
@@ -333,7 +346,7 @@ html {
     }
 }
 
-@media (max-width: 1339px) {
+@media (max-width: 959px) {
     .partner-list {
         max-width: 492px;
         margin: 0 auto;
@@ -348,7 +361,7 @@ html {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 960px) {
     .container {
         width: 940px;
         margin: 0 auto;
